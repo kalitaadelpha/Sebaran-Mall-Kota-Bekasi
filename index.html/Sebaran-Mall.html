@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebGIS Sebaran Mall di Kota Bekasi</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- CSS eksternal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="logo">
+        <img src="asset/logo kota bekasi.png" alt="Logo Kota Bekasi" />
+      </div>
+      <div class="title">
+        <h1>WebGIS Sebaran Mall</h1>
+        <h2>Kota Bekasi</h2>
+      </div>
+    </div>
+  </header>
+    <nav id="navbar">
+      <a href="#">Beranda</a>
+      <a href="#">Peta</a>
+      <a href="#">Tentang</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="tema-kajian">
+  <h2>Sebaran Mall Di Kota Bekasi</h2>
+  <p>
+    Dibawah ini merupakan sebaran pusat perbelanjaan (mall) di Kota Bekasi sebagai bagian dari analisis spasial dalam sistem informasi geografis (SIG). 
+    Tujuannya adalah untuk memetakan lokasi-lokasi mall, serta mengenali persebaran pembangunan terhadap fasilitas komersial ini.
+  </p>
+</section>
+
+
+  <!-- PETA -->
+  <div id="map" class="map-container"></div>
+
+  <!-- DAFTAR MALL -->
+  <div class="mall-list">
+  <h2 class="section-title">Daftar Mall</h2>
+<div class="mall-container">
+  <a class="mall-card"href="mall.html/summarecon.html">Summarecon Mall Bekasi</a>
+  <a class="mall-card"href="mall.html/grand-metropolitan.html">Grand Metropolitan Mall</a>
+  <a class="mall-card"href="mall.html/metropolitan-mall.html">Metropolitan Mall</a>
+  <a class="mall-card"href="mall.html/grand-galaxy.html">Grand Galaxy Park</a>
+  <a class="mall-card"href="mall.html/mega-hypermall.html">Mega Bekasi Hypermall</a>
+  <a class="mall-card"href="mall.html/revo-town.html">Revo Town</a>
+  <a class="mall-card"href="mall.html/blu-plaza.html">Blu Plaza</a>
+  <a class="mall-card"href="mall.html/cyber-park.html">Bekasi Cyber Park</a>
+  <a class="mall-card"href="mall.html/bekasi-junction.html">Bekasi Junction</a>
+  <a class="mall-card"href="mall.html/plaza-pondok.html">Plaza Pondok Gede</a>
+  <a class="mall-card"href="mall.html/pakuwon.html">Pakuwon Mall Bekasi</a>
+</div>
+
+  <div id="author-section">     
+                            <div class="author-content"> 
+                                <h2>About Me</h2> 
+                                <img src="asset/WhatsApp Image 2025-04-25 at 18.12.39.jpeg" alt="Profile Picture" class="profile-picture"> 
+                                <div class="author-name"> 
+                                    <h3>Kalita Adelpha Fatima</h3> 
+                                </div> 
+                                <p> Kalita Adelpha Fatima merupakan mahasiswa semester 4 di program studi Sains Informasi Geografi Universitas Pendidikan Indonesia. Saya memiliki minat dibidang sistem informasi geografis. Jurusan yang saya ambil memiliki peminatan di bidang sistem informasi geografis. Maka dari itu saya ingin mendalami sistem informasi geografis ini.</p> 
+                            </div> 
+                        </div> 
+                        <div id="footer"> 
+                            <div class="footer-content"> 
+                                <h3>Hubungi Saya</h3> 
+                                <p>Email: kalitaadelphaf@gmail.com</p> 
+                                <p>Phone: 0812-9166-1862</p> 
+                            </div> 
+                        </div> 
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 - WebGIS Mall Bekasi | Dibuat dengan Leaflet.js</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script>
+  fetch('geosjon/shpkotbks.geojson')
+    .then(response => response.json())
+    .then(data => {
+      L.geoJSON(data, {
+        onEachFeature: function (feature, layer) {
+          if (feature.properties && feature.properties.nama) {
+            layer.bindPopup(feature.properties.nama);
+          }
+        },
+        style: {
+          color: 'blue',
+          weight: 2
+        }
+      }).addTo(map);
+    });
+</script>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- JS eksternal -->
+  <script src="script.js"></script>
+
+
+</body>
+</html>

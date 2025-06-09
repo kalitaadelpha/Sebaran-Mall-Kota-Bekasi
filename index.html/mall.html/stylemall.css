@@ -1,0 +1,289 @@
+/* Tengah-kan semua konten di halaman */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Judul halaman dan alamat */
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Container utama konten */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Desain elemen gambar dan teks */
+.data-item {
+  text-align: center;
+}
+
+.data-item img {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Deskripsi */
+.description h3 {
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.description p {
+  line-height: 1.6;
+}
+
+/* Link kembali ke peta */
+a[href*="Sebaran-Mall.html"] {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a[href*="Sebaran-Mall.html"]:hover {
+  background-color: #34495e;
+}
+
+/* Link Google Maps */
+a[href^="https://maps"] {
+  margin-bottom: 15px;
+  display: inline-block;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a[href^="https://maps"]:hover {
+  text-decoration: underline;
+}
+
+.link-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.link-center a {
+  font-weight: 500;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.tenant-section {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  margin-top: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.tenant-section h3 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.tenant-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.tenant-list li {
+  background-color: #e2e8f0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #334155;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.tenant-list li:hover {
+  background-color: #cbd5e1;
+  cursor: default;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.mall-description {
+  flex: 1;
+}
+
+.tenant-section {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.tenant-section h3 {
+  margin-top: 0;
+}
+
+.tenant-list {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.tenant {
+  flex: 1;
+  background-color: #f0f4ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tenant h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.tenant ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tenant li {
+  background-color: #e0e7ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+     
+  }
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* Flex container */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Deskripsi styling */
+.deskripsi {
+  flex: 2;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Daftar Tenant styling */
+.tenant {
+  flex: 1;
+  background-color: #eef3ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tenant h3 {
+  text-align: center;
+}
+
+.tenant ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tenant li {
+  background-color: #d8e2ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+      
+  }
+}
+
+.tenant ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tenant li {
+  background-color: #d8e2ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;  /* Supaya teks dalam <li> juga di tengah */
+}
+
+.tombol-container {
+  text-align: center;        /* Tengahkan isi div */
+  margin-top: 20px;          /* Jarak atas */
+}
+
+.tombol-link {
+  display: inline-block;     /* Supaya bisa diberi padding */
+  background-color: #1f2937; /* Warna tombol */
+  color: white;              /* Warna teks */
+  padding: 10px 20px;        /* Ruang dalam tombol */
+  text-decoration: none;     /* Hilangkan underline */
+  border-radius: 8px;        /* Sudut membulat */
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.tombol-link:hover {
+  background-color: #374151; /* Warna saat hover */
+}

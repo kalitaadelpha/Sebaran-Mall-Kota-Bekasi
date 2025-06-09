@@ -1,0 +1,206 @@
+/* Style Kerangka Secara Umum */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+    caret-color: transparent;
+    }
+    body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    }
+    /* Seluruh Komponen Pada Header */
+    .logo {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    }
+    .logo img {
+    width: 80px; /* Set the width of the logo */
+    margin-right: 10px; /* Add some space between the image and title */
+    }
+    
+    .app-header {
+  background-color: #006494;
+  color: white;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.logo {
+  height: 70px;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0;
+}
+#navbar {
+  background-color: #2d3c61; /* Warna biru tua */
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+  color: #f9d1a3; /* Warna hover */
+}
+
+
+  .map-container {
+  height: 500px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 28px;
+  color: #4b73b4;
+  font-weight: bold;
+}
+
+.mall-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mall-card {
+  background-color: #e0f0ff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #003366;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+  min-width: 200px;
+  text-align: center;
+}
+
+.mall-card:hover {
+  transform: scale(1.05);
+  background-color: #cce6ff;
+  cursor: pointer;
+}
+
+.map-container {
+  height: 500px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Author Section */
+#author-section {
+    background-color: #7ae3e1;
+    padding: 30px 15px;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    color: #72427e;
+    text-align: justify;
+}
+
+.author-content {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 14px; /* Ukuran teks lebih kecil */
+}
+
+.author-content h2 {
+    text-align: center;
+    font-size: 20px; /* Ukuran heading lebih kecil */
+    margin-bottom: 20px;
+}
+
+.author-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px; /* Ukuran nama lebih kecil */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    height: 180px; /* Lebih kecil dari sebelumnya */
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: block;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); /* opsional, agar lebih rapi */
+}
+
+/* Footer */
+#footer {
+    background-color: #2d3c61;
+    color: #68b5e1;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+
+/* Leaflet Legend */
+.legend {
+    padding: 6px 8px;
+    background-color: rgba(255, 255, 255, 0.952);
+    box-shadow: 0 0 15px rgba(236, 90, 6, 0.836);
+    border-radius: 5px;
+}
+.legend div {
+    width: 30px;
+    height: 5px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.5;
+}
+div.legend.leaflet-control br {
+    clear: both;
+}
+
+#tema-kajian {
+  background-color: #eaf8fb;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  margin-top: 20px;
+  border-bottom: 2px solid #cce5f0;
+}
+
+#tema-kajian h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2d3c61;
+}
+
+#tema-kajian p {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+
